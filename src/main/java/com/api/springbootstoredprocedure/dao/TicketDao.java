@@ -23,4 +23,5 @@ public class TicketDao {
 	public List<Ticket> getTicketInfoByCatagory(String input) {
 		return em.createNamedStoredProcedureQuery("secondProcedure").setParameter("tcatagory", input).getResultList();
 	}
+	
 }
